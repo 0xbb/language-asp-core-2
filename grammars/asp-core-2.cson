@@ -70,7 +70,7 @@
     'name': 'variable.asp-core-2'
   }
   {
-    'match': '\"([^\"]|\\\")*\"'
+    'match': '"([^"\\\\]|\\\\")*"'
     'name': 'string.asp-core-2'
   }
   {
