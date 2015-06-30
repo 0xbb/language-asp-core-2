@@ -1,7 +1,7 @@
 {
   "name": "language-asp-core-2",
   "version": "0.0.0",
-  "description": "ASP-Core-2 (Answer Set Programming) language support in Atom",
+  "description": "Answer Set Programming + Clingo/Gringo extensions language support",
   "repository": "https://github.com/0xbb/language-asp-core-2",
   "license": "MIT",
   "engines": {
