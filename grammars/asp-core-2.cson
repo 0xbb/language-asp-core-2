@@ -19,6 +19,49 @@
     'name': 'keyword.other.asp-core-2'
   }
   {
+    'match': '#(count|max|min|sum)\\b'
+    'name': 'keyword.function.asp-core-2'
+  }
+  {
+    'comment': 'Gringo functions'
+    'match': '#(maximize|minimize|show|showsig|sup|inf|true|false|forget|external|cumulative|disjoint|const|base|include|program)\\b'
+    'name': 'support.function.asp-core-2'
+  }
+  {
+      'comment': 'Gringo script'
+      'begin': '#script\\s*\\(\\s*python\\s*\\)'
+      'beginCaptures':
+        '0':
+          'name': 'support.function.asp-core-2'
+
+      'patterns':[
+        {
+              'include': 'source.python'
+        }
+      ]
+      'end': '#end'
+      'endCaptures':
+        '0':
+          'name': 'support.function.asp-core-2'
+  }
+  {
+      'comment': 'Gringo script'
+      'begin': '#script\\s*\\(\\s*lua\\s*\\)'
+      'beginCaptures':
+        '0':
+          'name': 'support.function.asp-core-2'
+
+      'patterns':[
+        {
+              'include': 'source.lua'
+        }
+      ]
+      'end': '#end'
+      'endCaptures':
+        '0':
+          'name': 'support.function.asp-core-2'
+  }
+  {
     'match': '[a-z][A-Za-z0-9_]*'
     'name': 'entity.name.function.asp-core-2'
   }
@@ -33,9 +76,5 @@
   {
     'match': '0|[1-9][0-9]*'
     'name': 'constant.numeric.asp-core-2'
-  }
-  {
-    'match': '(#count|#max|#min|#sum)'
-    'name': 'keyword.asp-core-2'
   }
 ]
